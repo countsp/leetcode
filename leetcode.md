@@ -56,5 +56,15 @@ cout << pq.top().first;  // 输出 10（根据 pair.first 排序）
 ```
 
 
+**unordered_map**
+count()判断元素存在？
 
+```
+unordered_map<char, int> freq;
+    freq['A'] = 2;
+    freq['B'] = 3;
+
+    cout << freq.count('A') << endl; // 输出 1（存在）
+    cout << freq.count('C') << endl; // 输出 0（不存在）
+```
 
