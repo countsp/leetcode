@@ -42,9 +42,17 @@ pq.push(10);
 cout << pq.top();  // 输出 1（最小值）
 ```
 
+### vector
+
+判断存在
+```
+if (find(v.begin(), v.end(), 3) != v.end()) {
+    // 元素 3 存在
+}
+```
 
 
-**pair**
+### pair
 
 ```
 priority_queue<pair<int, int>> pq;
