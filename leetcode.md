@@ -44,13 +44,26 @@ cout << pq.top();  // 输出 1（最小值）
 
 ### vector
 
-判断存在
+**判断存在**
 ```
 if (find(v.begin(), v.end(), 3) != v.end()) {
     // 元素 3 存在
 }
 ```
 
+**排序**
+```
+sort(intervals.begin(), intervals.end());
+```
+对于一个 vector<vector<int>> intervals，std::sort 默认会按 每个子 vector 的第一个元素（即 start）升序排列。
+
+因为 std::vector<int> 本身支持按 字典序（lexicographical order）比较，这意味着：
+
+会先比较 vec[0]；如果 vec[0] 相等，再比较 vec[1]；
+
+**翻转** 189
+
+std::reverse(begin, end)
 
 ### pair
 
